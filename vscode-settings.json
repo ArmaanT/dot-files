@@ -1,0 +1,137 @@
+{
+    // General Settings
+    "window.zoomLevel": 1,
+    "files.associations": {
+        "*.js": "javascriptreact"
+    },
+    "workbench.colorTheme": "Flatland Monokai",
+    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#212121",
+        "statusBar.noFolderBackground": "#212121",
+    },
+    "terminal.integrated.experimentalUseTitleEvent": true,
+    "terminal.integrated.fontFamily": "monospace, PowerlineSymbols",
+    "window.openFoldersInNewWindow": "on",
+    "files.insertFinalNewline": true,
+    "editor.minimap.scale": 1.5,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "explorer.confirmDelete": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "liveshare.presence": true,
+    "editor.formatOnSave": true,
+    // Python
+    "python.pythonPath": "/usr/bin/python3.7",
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.formatting.blackArgs": [
+        "-l100"
+    ],
+    "python.formatting.provider": "black",
+    "python.jediEnabled": false,
+    // Markdown
+    "markdown.preview.linkify": false,
+    "markdownlint.ignore": [
+        "LICENSE",
+        "CHANGELOG.md"
+    ],
+    // TODO highlighting
+    "todohighlight.keywords": [
+        {
+            "text": "FIXME:",
+            "border": "1px solid red",
+            "borderRadius": "2px",
+            "color": "red",
+            "backgroundColor": "rgba(0,0,0,0)",
+        },
+        {
+            "text": "TODO:",
+            "color": "yellow",
+            "border": "1px solid yellow",
+            "borderRadius": "2px",
+            "backgroundColor": "rgba(0,0,0,0)",
+        }
+    ],
+    // Latex Workshop
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.fdb_latexmk",
+        "*.fls",
+        "*.log",
+        "*.out",
+        "*.synctex.gz",
+    ],
+    "latex-workshop.bind.enter.key": false,
+    // Spell Check Dictionary
+    "cSpell.userWords": [
+        "Kubernetes",
+        "PIPENV",
+        "Traefik",
+        "VENV",
+        "circleci",
+        "codecov",
+        "gbms",
+        "isort",
+        "listservs",
+        "noqa",
+        "oauth",
+        "oauthlib",
+        "pennid",
+        "pennlabs",
+        "pfsense"
+    ],
+    "cSpell.allowCompoundWords": true,
+    // OCaml
+    "[ocaml]": {
+        "editor.rulers": [
+            80
+        ],
+        "editor.defaultFormatter": "freebroccolo.reasonml"
+    },
+    "reason.path.ocamlmerlin": "/home/armaan/.opam/4.09.0/bin/ocamlmerlin",
+    "reason.path.ocpindent": "/home/armaan/.opam/4.09.0/bin/ocp-indent",
+    "reason.path.ocamlfind": "/home/armaan/.opam/4.09.0/bin/ocamlfind",
+    "ocaml.lintOnChange": false,
+    // Java
+    "[java]": {
+        "editor.rulers": [
+            100
+        ]
+    },
+    // C
+    "[c]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false,
+    },
+    // Yaml
+    "[yaml]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false,
+    },
+    // Terraform
+    "terraform.indexing": {
+        "enabled": false,
+        "liveIndexing": false,
+        "delay": 500,
+        "exclude": [
+            ".terraform/**/*",
+            "**/.terraform/**/*"
+        ]
+    },
+    "terraform.languageServer": {
+        "enabled": true,
+        "args": []
+    },
+    "[hcl]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false,
+    },
+}
+
