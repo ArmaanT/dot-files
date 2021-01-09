@@ -1,0 +1,4 @@
+.vscode
+.devcontainer
+.env
+docker-compose.private.yaml

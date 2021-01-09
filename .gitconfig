@@ -1,0 +1,13 @@
+[user]
+	email = armaan@tobaccowalla.com
+	name = Armaan Tobaccowalla
+	signingkey = A4E72C72701AFDFE
+[commit]
+	gpgsign = true
+[tag]
+	forceSignAnnotated = true
+	gpgSign = true
+[core]
+	excludesfile = /home/armaan/.gitignore
+[alias]
+	cleanup = "!set -x; git branch --merged master | grep -v '\\* master'"

@@ -102,9 +102,13 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cdpl="cd ~/Development/Programming/Penn\ Labs/"
 alias cdhl="cd ~/Development/Homelab"
-alias cdsch="cd ~/School/"
+alias cdsch="cd ~/School/Junior\ Year/Fall"
+alias cdhk="cd ~/Development/Programming/Internships/hackerrank/"
 alias vim="nvim"
+alias cat="bat -P --style=plain"
 alias tf="terraform"
+alias gitdeletesquashed='G_OLD_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout -q master && git for-each-ref refs/heads/ "--format=%(refname:short)" | while read branch; do mergeBase=$(git merge-base master $branch) && [[ $(git cherry master $(git commit-tree $(git rev-parse $branch^{tree}) -p $mergeBase -m _)) == "-"* ]] && git branch -D $branch; done; git checkout -q $G_OLD_BRANCH'
+alias gitdeletemerged="git branch --merged master | grep -v \"\* master\" | xargs -n 1 git branch -d"
 
 # Collect Kubernetes contexts
 export KUBECONFIG="$HOME/.kube/config"
@@ -124,3 +128,6 @@ if [ /usr/local/bin/helm ]; then source <(helm completion zsh); fi
 
 # Load kubectx and kubens autocomplete
 autoload -U compinit && compinit
+
+# Add global yarn packages to path
+export PATH="$(yarn global bin):$PATH"
