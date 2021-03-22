@@ -101,9 +101,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cdpl="cd ~/Development/Programming/Penn\ Labs/"
+alias cdcis="cd ~/Development/Programming/CIS188/"
+alias cdfks="cd ~/Development/Programming/forks/"
 alias cdhl="cd ~/Development/Homelab"
-alias cdsch="cd ~/School/Junior\ Year/Fall"
-alias cdhk="cd ~/Development/Programming/Internships/hackerrank/"
+alias cdsch="cd ~/School/Junior\ Year/Spring"
 alias vim="nvim"
 alias cat="bat -P --style=plain"
 alias tf="terraform"
@@ -131,3 +132,5 @@ autoload -U compinit && compinit
 
 # Add global yarn packages to path
 export PATH="$(yarn global bin):$PATH"
+
+export PATH="$HOME/.poetry/bin:$PATH"

@@ -1,6 +1,4 @@
 {
-  // General Settings
-  "window.zoomLevel": 1,
   "files.associations": {
     "*.js": "javascriptreact",
     "*.rmd": "markdown",
@@ -76,6 +74,7 @@
     "PIPENV",
     "Traefik",
     "VENV",
+    "bulma",
     "circleci",
     "codecov",
     "gbms",
@@ -159,15 +158,19 @@
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.codeLens.enabled": false,
-  "python.languageServer": "Microsoft",
+  "python.languageServer": "Pylance",
   "files.exclude": {
     "**/node_modules": true,
     "**/.next": true,
-    "**/yarn.lock": true
+    "**/yarn.lock": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "r.rterm.linux": "radian",
   "python.formatting.blackArgs": [
@@ -192,4 +195,8 @@
   ],
   "files.autoSave": "afterDelay",
   "markdown.extension.toc.unorderedList.marker": "*",
+  "liveshare.authenticationProvider": "GitHub",
+  "python.showStartPage": false,
+  "window.zoomLevel": 1,
+  "docker.showStartPage": false,
 }
