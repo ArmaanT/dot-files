@@ -11,3 +11,5 @@
 	excludesfile = /home/armaan/.gitignore
 [alias]
 	cleanup = "!set -x; git branch --merged master | grep -v '\\* master'"
+[init]
+	defaultBranch = main

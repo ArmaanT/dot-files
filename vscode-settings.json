@@ -6,7 +6,6 @@
     ".hooks.sscaff.js": "javascriptreact"
   },
   "workbench.colorTheme": "Flatland Monokai",
-  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
   "workbench.colorCustomizations": {
     "statusBar.background": "#212121",
     "statusBar.noFolderBackground": "#212121"
@@ -77,6 +76,7 @@
     "bulma",
     "circleci",
     "codecov",
+    "curr",
     "gbms",
     "isort",
     "listservs",
@@ -173,9 +173,6 @@
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "r.rterm.linux": "radian",
-  "python.formatting.blackArgs": [
-    "-l100"
-  ],
   "cSpell.enableFiletypes": [
     "rmarkdown"
   ],
@@ -199,4 +196,10 @@
   "python.showStartPage": false,
   "window.zoomLevel": 1,
   "docker.showStartPage": false,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
 }

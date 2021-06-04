@@ -110,7 +110,7 @@ alias cat="bat -P --style=plain"
 alias tf="terraform"
 alias gitdeletesquashed='G_OLD_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout -q master && git for-each-ref refs/heads/ "--format=%(refname:short)" | while read branch; do mergeBase=$(git merge-base master $branch) && [[ $(git cherry master $(git commit-tree $(git rev-parse $branch^{tree}) -p $mergeBase -m _)) == "-"* ]] && git branch -D $branch; done; git checkout -q $G_OLD_BRANCH'
 alias gitdeletemerged="git branch --merged master | grep -v \"\* master\" | xargs -n 1 git branch -d"
-
+alias pdfmerge="gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dAutoRotatePages=/None -sOutputFile=out.pdf"
 # Collect Kubernetes contexts
 export KUBECONFIG="$HOME/.kube/config"
 KUBE_CONTEXTS="$HOME/.kube/contexts"
